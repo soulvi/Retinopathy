@@ -1,7 +1,1 @@
-echo "# Retinopathy" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/soulvi/Retinopathy.git
-git push -u origin main
+![image](https://github.com/soulvi/Retinopathy/assets/147710292/99ef3481-df30-44da-9944-cb24449b648a)
