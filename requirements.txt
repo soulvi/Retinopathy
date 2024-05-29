@@ -1,10 +1,7 @@
-torch
-numpy
-pandas
-matplotlib
-torchvision
-google-colab
-Pillow
-tqdm
-scikit-learn
 streamlit
+tensorflow
+keras
+pillow
+torch 
+torchvision 
+pandas
