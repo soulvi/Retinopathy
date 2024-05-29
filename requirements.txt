@@ -1,0 +1,7 @@
+streamlit
+tensorflow
+keras
+pillow
+torch 
+torchvision 
+pandas
