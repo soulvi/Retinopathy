@@ -10,6 +10,15 @@ model = ResNetModel(num_classes)
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 model.eval()
 
+# Функция для предсказания класса и вероятностей
+def predict(image):
+    image = transform(image).unsqueeze(0)
+    with torch.no_grad():
+        outputs = model(image)
+        probabilities = torch.nn.functional.softmax(outputs, dim=1)
+        _, predicted = torch.max(outputs, 1)
+    return predicted.item(), probabilities.squeeze().cpu().numpy()
+
 # Интерфейс Streamlit
 st.title("Классификация степени заболевания")
 
